@@ -56,6 +56,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-dw-3RP">
                                 <rect key="frame" x="55" y="306" width="306" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LwH-2H-lVY"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oZ-7K-3WS">
                                 <rect key="frame" x="16" y="311" width="33" height="21"/>
@@ -71,14 +74,23 @@
                                     <segment title="Switches"/>
                                     <segment title="Button"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6L5-cu-pIt"/>
+                                </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kii-fB-QEg">
                                 <rect key="frame" x="11" y="443" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KoG-JB-y16"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="REH-FZ-AI1">
                                 <rect key="frame" x="310" y="443" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="R5H-W6-1ZV"/>
+                                </connections>
                             </switch>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSQ-41-vcO">
                                 <rect key="frame" x="16" y="444" width="343" height="30"/>
@@ -88,10 +100,18 @@
                                 <state key="normal" title="Do Something">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onDoSomethingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2K-Uv-Dyi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99912697076797485" green="0.80081981420516968" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="sqz-b3-l9G" id="WWs-OF-Upa"/>
+                        <outlet property="numberTextField" destination="D9e-EV-KTG" id="Ehr-OZ-qHn"/>
+                        <outlet property="sliderLabel" destination="5oZ-7K-3WS" id="HFS-z1-1XI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
