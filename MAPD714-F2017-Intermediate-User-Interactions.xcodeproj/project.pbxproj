@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					E9C317DD1F7331BB00EAF098 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2BULHRS882;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,7 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = "MAPD714-F2017-Intermediate-User-Interactions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-F2017-Intermediate-User-Interactions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = "MAPD714-F2017-Intermediate-User-Interactions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-F2017-Intermediate-User-Interactions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
